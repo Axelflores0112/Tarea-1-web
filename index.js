@@ -8,7 +8,7 @@ let alumnos = [
    { id:2,Nombre:'juan'},
    { id:3,Nombre:'pedro'}
 ]
-app-get("/alumnos",(req,res) => {
+app.get("/alumnos",(req,res) => {
     res.send(alumnos);
 });
 app.post("/alumnos ", (req,res)=>{
